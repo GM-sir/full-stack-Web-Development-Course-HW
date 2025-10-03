@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flags</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+ .animations{
+    margin:50px auto;
+    height: 600px;
+    width: 600px;
+    /* border: 2px solid black; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.animations .wel{
+    font-size: 50px;
+    padding: 20px auto;
+    animation: colour 1s linear infinite;
+}
+.animations .name{
+    margin-top: 30px;
+    font-size: 30px;
+} 
+
+
+.animations .resume {
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 100px;
+    /* border: 2px solid red; */
+    position: relative;  
+    /* overflow: hidden;     */
+}
+
+.animations .resume button {
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    background-image: linear-gradient(to right bottom , rgb(151, 16, 16), rgb(224, 11, 11), white);
+    border: 1px solid white;
+    border-radius: 10%;
+    color: aliceblue;
+    animation: box 6s linear infinite;
+}
+
+.animations .resume:hover button {
+    animation-play-state: paused;
+}
+.animations .resume button:hover{
+    height: 60px;
+    width: 120px;
+}
+@keyframes colour {
+    from{
+        color: #33d313;
+    }
+    to{
+      color: #e01313;  
+    }
+}
+@keyframes box {
+    0%   { 
+        top: 0; 
+        left: 0; 
+    }
+    25%  { 
+        top: 0; 
+        left: calc(100% - 80px); 
+    }
+    50%  { 
+        top: calc(100% - 40px); 
+        left: calc(100% - 80px); 
+    }
+    75%  { 
+        top: calc(100% - 40px); 
+        left: 0; 
+    }
+    100% { 
+        top: 0; 
+        left: 0;
+    }
+}
+    </style>
+</head>
+<body>
+   <div class="animations">
+    <div class="wel">Welcome to my portfolio</div>
+   <div class="name">Myself Sayad Golam Morshed</div>
+   <div class="resume"><button>Resume</button></div>
+   </div>
+</body>
+</html>
