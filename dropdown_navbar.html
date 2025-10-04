@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flags</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    /* display: inline-block; */
+}
+.container .lists{
+    margin:  0 ;
+     padding: 0 100px ; 
+    /* width: 100%; */
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid black; */
+    white-space: nowrap;
+}
+.container .lists ul{
+    list-style: none;
+     display: flex; 
+     
+     font-size: 15px;
+     font-weight: 600;
+     line-height: 50px;
+    
+}
+.container .lists ul li{
+    padding: 10px 15px;
+}
+
+ .list_item1 .UL{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.432);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+    .list_item1:hover  .UL{
+    opacity: 1;
+    visibility: visible;
+    transition: all linear 1s;
+    
+}
+
+
+.UL li{
+    line-height: 10px;
+    text-align: left;
+}
+.UL li:hover {
+    background-color: rgba(235, 66, 15, 0.87);
+    
+}
+.UL li:hover a{
+   
+    color: white ; 
+
+}
+   .sub_item .subUL{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.432);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: 200px;
+    /* top: 30px; */
+}
+    .sub_item:hover  .subUL{
+    opacity: 1;
+    visibility: visible;
+    transition: all linear 1s;
+    
+    }
+
+    
+.subUL li{
+    line-height: 10px;
+    text-align: left;
+}
+.subUL li:hover {
+    background-color: rgba(235, 66, 15, 0.87);
+    
+
+}
+.subUL li a{
+   
+    color: black !important ;
+}
+.subUL li:hover a{
+   
+    color: white !important;
+}
+i{
+    right: 0px;
+}
+
+</style>
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <div class="lists">
+                <ul>
+                     <li class="list_item1"><a class="lia" href="#">Desktop</a>
+                        <ul class="UL">
+                            <li class="sub_item"><a href="" > Desktop Offer</a>
+                                 
+                            </li>                       
+                            <li class="sub_item" ><a href="" >Star PC <i style="margin-left: 110px;" class="fa-solid fa-chevron-right"></i></a>
+                                 <ul class="subUL" style="height: 70px; ">
+                                    <li><a href="">Intel PC</a></li>
+                                    <li><a href="">Ryzen PC</a></li>  
+                                </ul>  
+                            </li>
+                            <li class="sub_item" ><a href="" >Gaming PC <i style="margin-left: 90px;" class="fa-solid fa-chevron-right"></i></a>
+                                 <ul class="subUL" style="height: 70px;">
+                                    <li><a href="">Intel PC</a></li>
+                                    <li><a href="">Ryzen PC</a></li>  
+                                </ul>  
+                            </li>
+                            <li class="sub_item" ><a href="" >Brand PC <i style="margin-left: 100px;" class="fa-solid fa-chevron-right"></i></a>
+                                 <ul class="subUL"  style="height: 200px; ;">
+                                    <li><a href="">Acer</a></li>
+                                    <li><a href="">ASUS</a></li>
+                                    <li><a href="">Dell</a></li>
+                                    <li><a href="">HP</a></li>
+                                    <li><a href="">Lenovo</a></li>
+                                    <li><a href="">MSI </a></li>
+                                </ul>  
+                            </li>
+                            <li class="sub_item"><a href="" >All-in- PC <i style="margin-left: 100px;" class="fa-solid fa-chevron-right"></i></a>
+                                 <ul class="subUL"  style="height: 210px; ;">
+                                    <li><a href="">Dell</a></li>
+                                    <li><a href="">HP</a></li>
+                                    <li><a href="">ASUS</a></li>
+                                    <li><a href="">LENOVO</a></li>
+                                    <li><a href="">Teclast</a></li>
+                                    <li><a href="">AOC</a></li>
+                                    <li><a href="">dHP</a></li>
+                                </ul>  
+                            </li>
+                            <li class="sub_item"><a href="">Portable Mini PC <i style="margin-left: 50px;" class="fa-solid fa-chevron-right"></i></a>       
+                                 <ul class="subUL"  style="height: 70px; ;">
+                                    <li><a href="">Asus</a></li>
+                                    <li><a href="">Zotac</a></li>  
+                                </ul>  
+                            </li> 
+                            <li><a href="">Apple Mac Mini</a></li>
+                            <li><a href="">Apple iMac</a></li>
+                            <li><a href="">Apple Mac Studio</a></li>
+                            <li><a href="">Apple Mac Pro</a></li>
+                            <li><a href="">Show All Desktop</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Component</a></li>
+                    <li><a href="#">Monitor</a></li>
+                    <li><a href="#">Power</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Tablet</a></li>
+                    <li><a href="#">Office Equipment</a></li>
+                    <li><a href="#">Camera</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Networking</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Server & Storage</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Gadget</a></li>
+                    <li><a href="#">Gaming</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Appliance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
